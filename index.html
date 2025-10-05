@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Ubaldo Coronel Vicuña - Presentación Personal</title>
+  <meta name="description" content="Presentación personal de Ubaldo Coronel Vicuña: Ingeniero en Sistemas Computacionales y Técnico de Investigación.">
+  <style>
+    :root{
+      --bg:#0b0b0c;          /* black-ish */
+      --panel:#121314;       /* near-black */
+      --border:#1e1f22;      /* subtle border */
+      --muted:#a7a9ad;       /* cool gray-400 */
+      --text:#e9eaec;        /* light gray */
+    }
+    *{box-sizing:border-box}
+    html,body{margin:0;padding:0;background:var(--bg);color:var(--text);
+      font-family:Inter,system-ui,-apple-system,Segoe UI,Roboto,Ubuntu,Cantarell,Noto Sans,sans-serif;
+      line-height:1.6}
+    a{color:#cfd1d6;text-decoration:none}
+    a:hover{text-decoration:underline}
+    .container{max-width:980px;margin:0 auto;padding:40px 20px}
+    .card{background:var(--panel);border:1px solid var(--border);border-radius:18px;overflow:hidden}
+    header{display:flex;gap:24px;align-items:center;padding:28px;border-bottom:1px solid var(--border)}
+    .avatar{
+      width:96px;height:96px;border-radius:50%;overflow:hidden;flex:0 0 auto;
+      border:1px solid #2a2b30;background:#0f1012
+    }
+    .avatar img{width:100%;height:100%;object-fit:cover;display:block}
+    .headings h1{margin:0 0 4px 0;font-size:26px;letter-spacing:.2px;font-weight:700}
+    .role{margin-top:2px;color:#d7d8db;font-weight:600}
+    .subrole{color:var(--muted);font-size:14px;margin-top:2px}
+    .contact{margin-top:10px;font-size:14px}
+    .content{display:grid;grid-template-columns:1.2fr .8fr;gap:24px;padding:22px}
+    h2{font-size:18px;margin:0 0 10px 0;color:#f5f6f7;font-weight:700}
+    p{margin:0 0 12px 0;color:#d6d7da}
+    .section-card{padding:18px;border:1px solid var(--border);border-radius:14px;background:#101112}
+    .chips{display:flex;flex-wrap:wrap;gap:10px}
+    .chip{padding:6px 10px;border-radius:999px;background:#1a1b1f;border:1px solid #2a2b30;font-size:12px;color:#e2e3e6}
+    footer{padding:16px 28px;border-top:1px solid var(--border);color:var(--muted);font-size:12px}
+    @media (max-width:860px){
+      .content{grid-template-columns:1fr}
+      header{flex-direction:column;align-items:flex-start}
+      .avatar{width:88px;height:88px}
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <div class="card">
+      <header>
+        <div class="avatar" aria-hidden="true">
+          <img src="motorstorm.png" alt="Foto de perfil de Ubaldo Coronel Vicuña">
+        </div>
+        <div class="headings">
+          <h1>Ubaldo Coronel Vicuña</h1>
+          <div class="role">Ingeniero en Sistemas Computacionales</div>
+          <div class="subrole">Técnico de Investigación · UNEMI (Ecuador)</div>
+          <div class="contact">
+            <a href="mailto:ucoronelv@unemi.edu.ec">ucoronelv@unemi.edu.ec</a>
+          </div>
+        </div>
+      </header>
+
+      <div class="content">
+        <section class="section-card">
+          <h2>Sobre mí</h2>
+          <p>
+            Trabajo en automatización y gestión de datos para investigación académica:
+            diseño de ETL con Python, carga y validación en SQL Server, y tableros analíticos en Power BI.
+            Desarrollo aplicaciones web ligeras (Flask) para certificación y verificación de producción científica.
+          </p>
+        </section>
+
+        <section class="section-card" id="habilidades">
+          <h2>Herramientas & Actividades</h2>
+          <div class="chips">
+            <span class="chip">Python · Flask · Pandas</span>
+            <span class="chip">SQL Server · T-SQL · PyODBC</span>
+            <span class="chip">ETL · Normalización de datos</span>
+            <span class="chip">Power BI · DAX</span>
+            <span class="chip">Git · GitHub</span>
+            <span class="chip">APIs: Scopus · DOAJ · SJR</span>
+            <span class="chip">Automatización CI/CD</span>
+            <span class="chip">DOCX → PDF para certificados</span>
+            <span class="chip">Dashboards para producción científica</span>
+          </div>
+        </section>
+
+        <section class="section-card" style="grid-column:1 / -1;">
+          <h2>Proyectos destacados</h2>
+          <p>
+            <strong>APP_CERTIFICADO</strong>: Generación automática de certificados PDF a partir de plantillas DOCX y datos validados.
+          </p>
+          <p>
+            <strong>ETL Scopus / DOAJ / SJR</strong>: Integración semanal de fuentes externas, normalización de ISSN/DOI, y consulta ágil vía SQL Server.
+          </p>
+          <p>
+            <strong>Dashboards Power BI</strong>: Seguimiento de indexación, cuartiles SJR y verificación de artículos.
+          </p>
+        </section>
+
+        <section class="section-card" id="contacto">
+          <h2>Contacto</h2>
+          <p>Correo Institucional</p>
+          <p><a href="mailto:ucoronelv@unemi.edu.ec">ucoronelv@unemi.edu.ec</a></p>
+        </section>
+      </div>
+
+      <footer>
+        © <span id="year"></span> Ubaldo Coronel Vicuña · Sitio personal
+      </footer>
+    </div>
+  </div>
+
+  <script>
+    document.getElementById('year').textContent = new Date().getFullYear();
+  </script>
+</body>
+</html>
