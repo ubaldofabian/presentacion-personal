@@ -39,6 +39,7 @@
     .project-item{margin-bottom:20px;padding-bottom:15px;border-bottom:1px solid #1e1f22}
     .project-item:last-child{border:0}
     .btn-dashboard{display:inline-block;padding:8px 16px;background:var(--accent);color:#fff;border-radius:6px;font-weight:600;font-size:13px;margin-top:10px}
+    .confidential-note{font-size: 12px; color: var(--muted); font-style: italic; margin-top: 10px; display: block;}
     footer{padding:20px;text-align:center;color:var(--muted);font-size:12px;border-top:1px solid var(--border)}
     @media (max-width:860px){ .content{grid-template-columns:1fr} header{flex-direction:column;text-align:center;padding:40px 20px} .contact-links{justify-content:center}}
   </style>
@@ -81,6 +82,22 @@
             <img src="https://img.shields.io/badge/Flask-000000?style=flat-square&logo=flask&logoColor=white" alt="Flask">
             <img src="https://img.shields.io/badge/Pandas-150458?style=flat-square&logo=pandas&logoColor=white" alt="Pandas">
             <img src="https://img.shields.io/badge/Flutter-02569B?style=flat-square&logo=flutter&logoColor=white" alt="Flutter">
+            <img src="https://img.shields.io/badge/GIT-E44C30?style=flat-square&logo=git&logoColor=white" alt="Git">
+            <img src="https://img.shields.io/badge/JSON_API-000000?style=flat-square&logo=json&logoColor=white" alt="APIs">
+          </div>
+        </section>
+
+        <section class="section-card full-width">
+          <h2>Data Management & Governance</h2>
+          <div style="display:grid; grid-template-columns: 1fr 1fr; gap:20px;">
+            <div>
+              <strong>🔒 Data Security & Privacy</strong>
+              <p style="font-size:13px; color:var(--muted); margin-top:5px;">Experience handling sensitive records for +70,000 users. I strictly implement data masking and private repository protocols to comply with institutional security policies.</p>
+            </div>
+            <div>
+              <strong>✅ Quality Assurance (QA)</strong>
+              <p style="font-size:13px; color:var(--muted); margin-top:5px;">Deployment of automated T-SQL scripts for data integrity, ensuring error-free indexing for Scopus and SJR records through rigorous validation logic.</p>
+            </div>
           </div>
         </section>
 
@@ -99,14 +116,29 @@
         </section>
 
         <section class="section-card full-width">
-          <h2>Key Technical Projects</h2>
-          <p><strong>Automation Engine (APP_CERTIFICADO):</strong> Developed a system that automatically generates PDF certificates from DOCX templates and validated database records, reducing manual workload by 90%.</p>
-          <p><strong>Scientific ETL Pipeline:</strong> Built a Python-based engine to harvest and normalize weekly data from international repositories (Scopus/SJR), ensuring data integrity in SQL Server.</p>
+          <h2>Technical Ecosystem: Research & Automation</h2>
+          
+          <div class="project-item">
+            <strong>🚀 Scientific Production Hub (Flask/Python)</strong>
+            <p>An internal web platform designed for the centralized management of research data. It includes modules for advanced searching, real-time reporting, and institutional metadata harvesting.</p>
+          </div>
+
+          <div class="project-item">
+            <strong>⚙️ Advanced ETL Pipeline</strong>
+            <p>Built a Python-based engine that consumes international APIs (Scopus/SJR) to normalize and cleanse large datasets, maintaining 100% data accuracy in SQL Server.</p>
+          </div>
+
+          <div class="project-item">
+            <strong>📄 Automated Certification Engine (APP_CERTIFICADO)</strong>
+            <p>Custom tool that automates the generation of official PDF certificates using validated database records and DOCX templates, increasing process speed by 90%.</p>
+          </div>
+
+          <span class="confidential-note">* Note: Detailed source code for institutional applications is hosted in private repositories to ensure data privacy and comply with institutional security standards.</span>
         </section>
       </div>
 
       <footer>
-        © <span id="year"></span> · Ubaldo Coronel Vicuña · Professional Portfolio · Built with HTML/CSS
+        © <span id="year"></span> · Ubaldo Coronel Vicuña · Built with Professional Integrity
       </footer>
     </div>
   </div>
