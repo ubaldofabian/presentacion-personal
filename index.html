@@ -39,7 +39,7 @@
     .project-item{margin-bottom:20px;padding-bottom:15px;border-bottom:1px solid #1e1f22}
     .project-item:last-child{border:0}
     .btn-dashboard{display:inline-block;padding:8px 16px;background:var(--accent);color:#fff;border-radius:6px;font-weight:600;font-size:13px;margin-top:10px}
-    .confidential-note{font-size: 12px; color: var(--muted); font-style: italic; margin-top: 10px; display: block;}
+    .confidential-note{font-size: 12px; color: var(--muted); font-style: italic; margin-top: 15px; display: block;}
     footer{padding:20px;text-align:center;color:var(--muted);font-size:12px;border-top:1px solid var(--border)}
     @media (max-width:860px){ .content{grid-template-columns:1fr} header{flex-direction:column;text-align:center;padding:40px 20px} .contact-links{justify-content:center}}
   </style>
@@ -49,7 +49,7 @@
     <div class="card">
       <header>
         <div class="avatar">
-          <img src="Profile.jpg" alt="Ubaldo Coronel">
+          <img src="tu-foto-perfil.jpg" alt="Ubaldo Coronel">
         </div>
         <div class="headings">
           <h1>Ubaldo Coronel</h1>
@@ -74,16 +74,16 @@
         </section>
 
         <section class="section-card">
-          <h2>Core Skills</h2>
+          <h2>Core Skills & Stack</h2>
           <div class="badge-grid">
             <img src="https://img.shields.io/badge/Python-3776AB?style=flat-square&logo=python&logoColor=white" alt="Python">
-            <img src="https://img.shields.io/badge/Power_BI-F2C811?style=flat-square&logo=powerbi&logoColor=black" alt="PowerBI">
-            <img src="https://img.shields.io/badge/SQL_Server-CC2927?style=flat-square&logo=microsoft-sql-server&logoColor=white" alt="SQL">
             <img src="https://img.shields.io/badge/Flask-000000?style=flat-square&logo=flask&logoColor=white" alt="Flask">
+            <img src="https://img.shields.io/badge/ReportLab-FFD43B?style=flat-square&logo=python&logoColor=blue" alt="ReportLab">
             <img src="https://img.shields.io/badge/Pandas-150458?style=flat-square&logo=pandas&logoColor=white" alt="Pandas">
-            <img src="https://img.shields.io/badge/Flutter-02569B?style=flat-square&logo=flutter&logoColor=white" alt="Flutter">
-            <img src="https://img.shields.io/badge/GIT-E44C30?style=flat-square&logo=git&logoColor=white" alt="Git">
-            <img src="https://img.shields.io/badge/JSON_API-000000?style=flat-square&logo=json&logoColor=white" alt="APIs">
+            <img src="https://img.shields.io/badge/SQL_Server-CC2927?style=flat-square&logo=microsoft-sql-server&logoColor=white" alt="SQL">
+            <img src="https://img.shields.io/badge/PyODBC-3776AB?style=flat-square&logo=python&logoColor=white" alt="PyODBC">
+            <img src="https://img.shields.io/badge/Jinja2-B11004?style=flat-square&logo=jinja&logoColor=white" alt="Jinja2">
+            <img src="https://img.shields.io/badge/Power_BI-F2C811?style=flat-square&logo=powerbi&logoColor=black" alt="PowerBI">
           </div>
         </section>
 
@@ -92,7 +92,7 @@
           <div style="display:grid; grid-template-columns: 1fr 1fr; gap:20px;">
             <div>
               <strong>🔒 Data Security & Privacy</strong>
-              <p style="font-size:13px; color:var(--muted); margin-top:5px;">Experience handling sensitive records for +70,000 users. I strictly implement data masking and private repository protocols to comply with institutional security policies.</p>
+              <p style="font-size:13px; color:var(--muted); margin-top:5px;">Experience managing sensitive institutional records for +70,000 entries. I implement strict data masking and private repository protocols to ensure information security.</p>
             </div>
             <div>
               <strong>✅ Quality Assurance (QA)</strong>
@@ -102,16 +102,16 @@
         </section>
 
         <section class="section-card full-width">
-          <h2>Featured Dashboards (Live Portfolio)</h2>
+          <h2>Live Dashboards (Portfolio)</h2>
           <div class="project-item">
             <strong>📊 Scopus Scientific Production Search</strong>
-            <p>A comprehensive tool for tracking scientific indexing, SJR quartiles, and article verification. Integrates data from Scopus, DOAJ, and SJR.</p>
-            <a href="https://shorturl.at/rJLK5" target="_blank" class="btn-dashboard">Open Dashboard 1</a>
+            <p>Comprehensive tool for tracking scientific indexing, SJR quartiles, and article verification. Integrates data from Scopus, DOAJ, and SJR.</p>
+            <a href="https://shorturl.at/rJLK5" target="_blank" class="btn-dashboard">Open Scopus Search</a>
           </div>
           <div class="project-item">
             <strong>📈 Institutional Research Analytics</strong>
             <p>Advanced data visualization for strategic KPI tracking and academic performance analysis at UNEMI.</p>
-            <a href="https://shorturl.at/5nUlA" target="_blank" class="btn-dashboard">Open Dashboard 2</a>
+            <a href="https://shorturl.at/5nUlA" target="_blank" class="btn-dashboard">Open Research Analytics</a>
           </div>
         </section>
 
@@ -120,25 +120,30 @@
           
           <div class="project-item">
             <strong>🚀 Scientific Production Hub (Flask/Python)</strong>
-            <p>An internal web platform designed for the centralized management of research data. It includes modules for advanced searching, real-time reporting, and institutional metadata harvesting.</p>
+            <p>A full-stack platform (Antigravity) for institutional research management. Key features include:</p>
+            <ul style="font-size: 13px; color: var(--muted); margin-top: 8px;">
+              <li><strong>Data Orchestration:</strong> Using <strong>Pandas</strong> and <strong>PyODBC</strong> to clean and synchronize +70,000 records from SQL Server.</li>
+              <li><strong>Dynamic Reporting:</strong> Custom engine built with <strong>ReportLab</strong> to generate automated PDF summaries and CSV exports.</li>
+              <li><strong>Responsive UI:</strong> Template-based interface using <strong>Jinja2</strong> for real-time metadata search and verification.</li>
+            </ul>
           </div>
 
           <div class="project-item">
             <strong>⚙️ Advanced ETL Pipeline</strong>
-            <p>Built a Python-based engine that consumes international APIs (Scopus/SJR) to normalize and cleanse large datasets, maintaining 100% data accuracy in SQL Server.</p>
+            <p>Python-based engine consuming international APIs to normalize and cleanse large datasets, ensuring data integrity for institutional reporting.</p>
           </div>
 
           <div class="project-item">
             <strong>📄 Automated Certification Engine (APP_CERTIFICADO)</strong>
-            <p>Custom tool that automates the generation of official PDF certificates using validated database records and DOCX templates, increasing process speed by 90%.</p>
+            <p>System that generates official PDF certificates from DOCX templates and validated database records, reducing manual processing time by 90%.</p>
           </div>
 
-          <span class="confidential-note">* Note: Detailed source code for institutional applications is hosted in private repositories to ensure data privacy and comply with institutional security standards.</span>
+          <span class="confidential-note">* Note: Source code for institutional applications is hosted in private repositories to comply with data privacy and security policies.</span>
         </section>
       </div>
 
       <footer>
-        © <span id="year"></span> · Ubaldo Coronel · Built with Professional Integrity
+        © <span id="year"></span> · Ubaldo Coronel · Professional Portfolio
       </footer>
     </div>
   </div>
