@@ -1,114 +1,112 @@
 <!DOCTYPE html>
-<html lang="es">
+<html lang="en">
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Ubaldo Coronel Vicuña - Presentación Personal</title>
-  <meta name="description" content="Presentación personal de Ubaldo Coronel Vicuña: Ingeniero en Sistemas Computacionales y Técnico de Investigación.">
+  <title>Ubaldo Coronel - Process & Data Analyst Portfolio</title>
   <style>
     :root{
-      --bg:#0b0b0c;          /* black-ish */
-      --panel:#121314;       /* near-black */
-      --border:#1e1f22;      /* subtle border */
-      --muted:#a7a9ad;       /* cool gray-400 */
-      --text:#e9eaec;        /* light gray */
+      --bg:#0b0b0c;
+      --panel:#121314;
+      --border:#1e1f22;
+      --muted:#a7a9ad;
+      --text:#e9eaec;
+      --accent:#3fb950; /* GitHub Green */
     }
     *{box-sizing:border-box}
     html,body{margin:0;padding:0;background:var(--bg);color:var(--text);
-      font-family:Inter,system-ui,-apple-system,Segoe UI,Roboto,Ubuntu,Cantarell,Noto Sans,sans-serif;
+      font-family:Inter,system-ui,-apple-system,sans-serif;
       line-height:1.6}
-    a{color:#cfd1d6;text-decoration:none}
-    a:hover{text-decoration:underline}
+    a{color:var(--accent);text-decoration:none;transition:0.2s}
+    a:hover{text-decoration:underline;opacity:0.8}
     .container{max-width:980px;margin:0 auto;padding:40px 20px}
     .card{background:var(--panel);border:1px solid var(--border);border-radius:18px;overflow:hidden}
-    header{display:flex;gap:24px;align-items:center;padding:28px;border-bottom:1px solid var(--border)}
+    header{display:flex;gap:24px;align-items:center;padding:28px;border-bottom:1px solid var(--border);background: linear-gradient(135deg, #161b22 0%, #0d1117 100%);}
     .avatar{
-      width:96px;height:96px;border-radius:50%;overflow:hidden;flex:0 0 auto;
-      border:1px solid #2a2b30;background:#0f1012
+      width:100px;height:100px;border-radius:50%;overflow:hidden;flex:0 0 auto;
+      border:2px solid var(--border);background:#0f1012
     }
     .avatar img{width:100%;height:100%;object-fit:cover;display:block}
-    .headings h1{margin:0 0 4px 0;font-size:26px;letter-spacing:.2px;font-weight:700}
-    .role{margin-top:2px;color:#d7d8db;font-weight:600}
+    .headings h1{margin:0 0 4px 0;font-size:28px;font-weight:700}
+    .role{color:#3fb950;font-weight:600;font-size:18px}
     .subrole{color:var(--muted);font-size:14px;margin-top:2px}
-    .contact{margin-top:10px;font-size:14px}
-    .content{display:grid;grid-template-columns:1.2fr .8fr;gap:24px;padding:22px}
-    h2{font-size:18px;margin:0 0 10px 0;color:#f5f6f7;font-weight:700}
-    p{margin:0 0 12px 0;color:#d6d7da}
-    .section-card{padding:18px;border:1px solid var(--border);border-radius:14px;background:#101112}
-    .chips{display:flex;flex-wrap:wrap;gap:10px}
-    .chip{padding:6px 10px;border-radius:999px;background:#1a1b1f;border:1px solid #2a2b30;font-size:12px;color:#e2e3e6}
-    footer{padding:16px 28px;border-top:1px solid var(--border);color:var(--muted);font-size:12px}
-    @media (max-width:860px){
-      .content{grid-template-columns:1fr}
-      header{flex-direction:column;align-items:flex-start}
-      .avatar{width:88px;height:88px}
-    }
+    .contact-links{margin-top:12px;display:flex;gap:15px;font-size:14px}
+    .content{display:grid;grid-template-columns:1fr 1fr;gap:20px;padding:22px}
+    h2{font-size:18px;margin:0 0 15px 0;color:#f5f6f7;display:flex;align-items:center;gap:8px}
+    .section-card{padding:20px;border:1px solid var(--border);border-radius:14px;background:#101112}
+    .full-width{grid-column: 1 / -1}
+    .badge-grid{display:flex;flex-wrap:wrap;gap:8px;margin-top:10px}
+    .project-item{margin-bottom:20px;padding-bottom:15px;border-bottom:1px solid #1e1f22}
+    .project-item:last-child{border:0}
+    .btn-dashboard{display:inline-block;padding:8px 16px;background:var(--accent);color:#fff;border-radius:6px;font-weight:600;font-size:13px;margin-top:10px}
+    footer{padding:20px;text-align:center;color:var(--muted);font-size:12px;border-top:1px solid var(--border)}
+    @media (max-width:860px){ .content{grid-template-columns:1fr} header{flex-direction:column;text-align:center;padding:40px 20px} .contact-links{justify-content:center}}
   </style>
 </head>
 <body>
   <div class="container">
     <div class="card">
       <header>
-        <div class="avatar" aria-hidden="true">
-          <img src="motorstorm.png" alt="Foto de perfil de Ubaldo Coronel Vicuña">
+        <div class="avatar">
+          <img src="motorstorm.png" alt="Ubaldo Coronel">
         </div>
         <div class="headings">
           <h1>Ubaldo Coronel Vicuña</h1>
-          <div class="role">Ingeniero en Sistemas Computacionales</div>
-          <div class="subrole">Técnico de Investigación · UNEMI (Ecuador)</div>
-          <div class="contact">
-            <a href="mailto:ucoronelv@unemi.edu.ec">ucoronelv@unemi.edu.ec</a>
+          <div class="role">Process & Data Analyst | Power BI Specialist</div>
+          <div class="subrole">Research Technician at UNEMI (Ecuador)</div>
+          <div class="contact-links">
+            <a href="mailto:ubaldocoronel@gmail.com">✉️ Email</a>
+            <a href="https://linkedin.com/in/ubaldocoronel" target="_blank">🔗 LinkedIn</a>
+            <a href="https://github.com/ubaldofabian" target="_blank">💻 GitHub</a>
           </div>
         </div>
       </header>
 
       <div class="content">
         <section class="section-card">
-          <h2>Sobre mí</h2>
+          <h2>About Me</h2>
           <p>
-            Trabajo en automatización y gestión de datos para investigación académica:
-            diseño de ETL con Python, carga y validación en SQL Server, y tableros analíticos en Power BI.
-            Desarrollo aplicaciones web ligeras (Flask) para certificación y verificación de producción científica.
+            Computer Systems Engineer specializing in data automation and research management. 
+            Expert in designing ETL pipelines with Python, SQL Server validation, and high-impact Power BI dashboards. 
+            I focus on optimizing institutional processes through data-driven decisions.
           </p>
         </section>
 
-        <section class="section-card" id="habilidades">
-          <h2>Herramientas & Actividades</h2>
-          <div class="chips">
-            <span class="chip">Python · Flask · Pandas</span>
-            <span class="chip">SQL Server · T-SQL · PyODBC</span>
-            <span class="chip">ETL · Normalización de datos</span>
-            <span class="chip">Power BI · DAX</span>
-            <span class="chip">Git · GitHub</span>
-            <span class="chip">APIs: Scopus · DOAJ · SJR</span>
-            <span class="chip">Automatización CI/CD</span>
-            <span class="chip">DOCX → PDF para certificados</span>
-            <span class="chip">Dashboards para producción científica</span>
+        <section class="section-card">
+          <h2>Core Skills</h2>
+          <div class="badge-grid">
+            <img src="https://img.shields.io/badge/Python-3776AB?style=flat-square&logo=python&logoColor=white" alt="Python">
+            <img src="https://img.shields.io/badge/Power_BI-F2C811?style=flat-square&logo=powerbi&logoColor=black" alt="PowerBI">
+            <img src="https://img.shields.io/badge/SQL_Server-CC2927?style=flat-square&logo=microsoft-sql-server&logoColor=white" alt="SQL">
+            <img src="https://img.shields.io/badge/Flask-000000?style=flat-square&logo=flask&logoColor=white" alt="Flask">
+            <img src="https://img.shields.io/badge/Pandas-150458?style=flat-square&logo=pandas&logoColor=white" alt="Pandas">
+            <img src="https://img.shields.io/badge/Flutter-02569B?style=flat-square&logo=flutter&logoColor=white" alt="Flutter">
           </div>
         </section>
 
-        <section class="section-card" style="grid-column:1 / -1;">
-          <h2>Proyectos destacados</h2>
-          <p>
-            <strong>APP_CERTIFICADO</strong>: Generación automática de certificados PDF a partir de plantillas DOCX y datos validados.
-          </p>
-          <p>
-            <strong>ETL Scopus / DOAJ / SJR</strong>: Integración semanal de fuentes externas, normalización de ISSN/DOI, y consulta ágil vía SQL Server.
-          </p>
-          <p>
-            <strong>Dashboards Power BI</strong>: Seguimiento de indexación, cuartiles SJR y verificación de artículos.
-          </p>
+        <section class="section-card full-width">
+          <h2>Featured Dashboards (Live Portfolio)</h2>
+          <div class="project-item">
+            <strong>📊 Scopus Scientific Production Search</strong>
+            <p>A comprehensive tool for tracking scientific indexing, SJR quartiles, and article verification. Integrates data from Scopus, DOAJ, and SJR.</p>
+            <a href="https://shorturl.at/rJLK5" target="_blank" class="btn-dashboard">Open Dashboard 1</a>
+          </div>
+          <div class="project-item">
+            <strong>📈 Institutional Research Analytics</strong>
+            <p>Advanced data visualization for strategic KPI tracking and academic performance analysis at UNEMI.</p>
+            <a href="https://shorturl.at/5nUlA" target="_blank" class="btn-dashboard">Open Dashboard 2</a>
+          </div>
         </section>
 
-        <section class="section-card" id="contacto">
-          <h2>Contacto</h2>
-          <p>Correo Institucional</p>
-          <p><a href="mailto:ucoronelv@unemi.edu.ec">ucoronelv@unemi.edu.ec</a></p>
+        <section class="section-card full-width">
+          <h2>Key Technical Projects</h2>
+          <p><strong>Automation Engine (APP_CERTIFICADO):</strong> Developed a system that automatically generates PDF certificates from DOCX templates and validated database records, reducing manual workload by 90%.</p>
+          <p><strong>Scientific ETL Pipeline:</strong> Built a Python-based engine to harvest and normalize weekly data from international repositories (Scopus/SJR), ensuring data integrity in SQL Server.</p>
         </section>
       </div>
 
       <footer>
-        © <span id="year"></span> Ubaldo Coronel Vicuña · Sitio personal
+        © <span id="year"></span> · Ubaldo Coronel Vicuña · Professional Portfolio · Built with HTML/CSS
       </footer>
     </div>
   </div>
