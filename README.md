@@ -3,4 +3,4 @@
 Sitio publicado con **GitHub Pages**.
 
 - **Repositorio:** https://github.com/ubaldofabian/presentacion-personal
-- **Sitio:** https://github.com/ubaldofabian/Ubaldo-Coronel_Portfolio
+- **Sitio:** https://ubaldofabian.github.io/Ubaldo-Coronel_Portfolio/
